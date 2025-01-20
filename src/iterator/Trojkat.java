@@ -1,28 +1,43 @@
 package iterator;
 
 public class Trojkat extends Figura {
+    double a;
+    double b;
+    double c;
+    double h;
+
+    public Trojkat(double a, double b, double c, double h) {
+        this.a = a;
+        this.b = b;
+        this.c = c;
+        this.h = h;
+        nazwa = "Trojkąt";
+    }
+
     @Override
     void scale(double m) {
-
+        this.a = this.a * m;
+        this.b = this.b * m;
+        this.c = this.c * m;
     }
 
     @Override
     double pole() {
-        return 0;
+        return a * h * 0.5;
     }
 
     @Override
     double obwod() {
-        return 0;
+        return a + b + c;
     }
 
     @Override
     double rwpis() {
-        return 0;
+        return 2 * pole() / (a + b + c);
     }
 
     @Override
     double ropis() {
-        return 0;
+        return a * b * c / (4 * pole());
     }
 }

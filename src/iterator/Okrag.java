@@ -6,6 +6,7 @@ public class Okrag extends Figura {
 
     Okrag(double promien) {
         this.promien = promien;
+        nazwa = "Okrąg";
     }
 
     @Override

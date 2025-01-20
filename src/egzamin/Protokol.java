@@ -8,9 +8,10 @@ public class Protokol {
     }
 
     void wyswietlProtokolZEgzaminu() {
-        int punktyNaZaliczenie = egzamin.zadania.size() * 50;
+        int maxPunktow = egzamin.zadania.size() * 100;
+        int punktyNaZaliczenie = maxPunktow / 2;
         for (Student student: egzamin.studeci) {
-            System.out.print("Student: " + student.imie + " punkty: " + student.punkty + " wynik: ");
+            System.out.print("Student: " + student.imie + " punkty: " + student.punkty + "/" + maxPunktow + " wynik: ");
             if (student.punkty > punktyNaZaliczenie) {
                 System.out.println("ZALICZONY");
             } else {

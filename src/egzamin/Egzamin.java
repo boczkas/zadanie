@@ -22,6 +22,7 @@ public class Egzamin {
                 int punkty = student.zrobZadanie(zadanie);
                 student.punkty += punkty;
             }
+            System.out.println("======================");
         }
     }
 }

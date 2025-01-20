@@ -8,6 +8,7 @@ public class Prostokat extends Figura {
     Prostokat(double bokA, double bokB) {
         this.bokA = bokA;
         this.bokB = bokB;
+        nazwa = "Prostokąt";
     }
 
     @Override
